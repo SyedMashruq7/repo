@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Syed Mashruq 07</title>
+        <script src="https://kit.fontawesome.com/83ce78bbab.js" crossorigin="anonymous"></script>
+        <style media="all" id="fa-v4-font-face">/*!
+            * Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com
+            * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
+            * Copyright 2023 Fonticons, Inc.
+            */@font-face{font-family:"FontAwesome";font-display:block;src:url(https://ka-f.fontawesome.com/releases/v6.4.0/webfonts/free-fa-solid-900.woff2) format("woff2"),url(https://ka-f.fontawesome.com/releases/v6.4.0/webfonts/free-fa-solid-900.ttf) format("truetype")}@font-face{font-family:"FontAwesome";font-display:block;src:url(https://ka-f.fontawesome.com/releases/v6.4.0/webfonts/free-fa-brands-400.woff2) format("woff2"),url(https://ka-f.fontawesome.com/releases/v6.4.0/webfonts/free-fa-brands-400.ttf) format("truetype")}@font-face{font-family:"FontAwesome";font-display:block;src:url(https://ka-f.fontawesome.com/releases/v6.4.0/webfonts/free-fa-regular-400.woff2) format("woff2"),url(https://ka-f.fontawesome.com/releases/v6.4.0/webfonts/free-fa-regular-400.ttf) format("truetype");unicode-range:u+f003,u+f006,u+f014,u+f016-f017,u+f01a-f01b,u+f01d,u+f022,u+f03e,u+f044,u+f046,u+f05c-f05d,u+f06e,u+f070,u+f087-f088,u+f08a,u+f094,u+f096-f097,u+f09d,u+f0a0,u+f0a2,u+f0a4-f0a7,u+f0c5,u+f0c7,u+f0e5-f0e6,u+f0eb,u+f0f6-f0f8,u+f10c,u+f114-f115,u+f118-f11a,u+f11c-f11d,u+f133,u+f147,u+f14e,u+f150-f152,u+f185-f186,u+f18e,u+f190-f192,u+f196,u+f1c1-f1c9,u+f1d9,u+f1db,u+f1e3,u+f1ea,u+f1f7,u+f1f9,u+f20a,u+f247-f248,u+f24a,u+f24d,u+f255-f25b,u+f25d,u+f271-f274,u+f278,u+f27b,u+f28c,u+f28e,u+f29c,u+f2b5,u+f2b7,u+f2ba,u+f2bc,u+f2be,u+f2c0-f2c1,u+f2c3,u+f2d0,u+f2d2,u+f2d4,u+f2dc}@font-face{font-family:"FontAwesome";font-display:block;src:url(https://ka-f.fontawesome.com/releases/v6.4.0/webfonts/free-fa-v4compatibility.woff2) format("woff2"),url(https://ka-f.fontawesome.com/releases/v6.4.0/webfonts/free-fa-v4compatibility.ttf) format("truetype");unicode-range:u+f041,u+f047,u+f065-f066,u+f07d-f07e,u+f080,u+f08b,u+f08e,u+f090,u+f09a,u+f0ac,u+f0ae,u+f0b2,u+f0d0,u+f0d6,u+f0e4,u+f0ec,u+f10a-f10b,u+f123,u+f13e,u+f148-f149,u+f14c,u+f156,u+f15e,u+f160-f161,u+f163,u+f175-f178,u+f195,u+f1f8,u+f219,u+f27a}
+        </style>
+        <style media="all" id ="fa-v5-font-face">
+            /*!
+             * Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com
+             * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
+             * Copyright 2023 Fonticons, Inc.
+             */@font-face{font-family:"Font Awesome 5 Brands";font-display:block;font-weight:400;src:url(https://ka-f.fontawesome.com/releases/v6.4.0/webfonts/free-fa-brands-400.woff2) format("woff2"),url(https://ka-f.fontawesome.com/releases/v6.4.0/webfonts/free-fa-brands-400.ttf) format("truetype")}@font-face{font-family:"Font Awesome 5 Free";font-display:block;font-weight:900;src:url(https://ka-f.fontawesome.com/releases/v6.4.0/webfonts/free-fa-solid-900.woff2) format("woff2"),url(https://ka-f.fontawesome.com/releases/v6.4.0/webfonts/free-fa-solid-900.ttf) format("truetype")}@font-face{font-family:"Font Awesome 5 Free";font-display:block;font-weight:400;src:url(https://ka-f.fontawesome.com/releases/v6.4.0/webfonts/free-fa-regular-400.woff2) format("woff2"),url(https://ka-f.fontawesome.com/releases/v6.4.0/webfonts/free-fa-regular-400.ttf) format("truetype")}
+        </style>
+        <style media="all" id="fa-v4-shims">
+           /*!
+            * Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com
+            * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
+            * Copyright 2023 Fonticons, Inc.
+            */@font-face{font-family:"FontAwesome";font-display:block;src:url(https://ka-f.fontawesome.com/releases/v6.4.0/webfonts/free-fa-solid-900.woff2) format("woff2"),url(https://ka-f.fontawesome.com/releases/v6.4.0/webfonts/free-fa-solid-900.ttf) format("truetype")}@font-face{font-family:"FontAwesome";font-display:block;src:url(https://ka-f.fontawesome.com/releases/v6.4.0/webfonts/free-fa-brands-400.woff2) format("woff2"),url(https://ka-f.fontawesome.com/releases/v6.4.0/webfonts/free-fa-brands-400.ttf) format("truetype")}@font-face{font-family:"FontAwesome";font-display:block;src:url(https://ka-f.fontawesome.com/releases/v6.4.0/webfonts/free-fa-regular-400.woff2) format("woff2"),url(https://ka-f.fontawesome.com/releases/v6.4.0/webfonts/free-fa-regular-400.ttf) format("truetype");unicode-range:u+f003,u+f006,u+f014,u+f016-f017,u+f01a-f01b,u+f01d,u+f022,u+f03e,u+f044,u+f046,u+f05c-f05d,u+f06e,u+f070,u+f087-f088,u+f08a,u+f094,u+f096-f097,u+f09d,u+f0a0,u+f0a2,u+f0a4-f0a7,u+f0c5,u+f0c7,u+f0e5-f0e6,u+f0eb,u+f0f6-f0f8,u+f10c,u+f114-f115,u+f118-f11a,u+f11c-f11d,u+f133,u+f147,u+f14e,u+f150-f152,u+f185-f186,u+f18e,u+f190-f192,u+f196,u+f1c1-f1c9,u+f1d9,u+f1db,u+f1e3,u+f1ea,u+f1f7,u+f1f9,u+f20a,u+f247-f248,u+f24a,u+f24d,u+f255-f25b,u+f25d,u+f271-f274,u+f278,u+f27b,u+f28c,u+f28e,u+f29c,u+f2b5,u+f2b7,u+f2ba,u+f2bc,u+f2be,u+f2c0-f2c1,u+f2c3,u+f2d0,u+f2d2,u+f2d4,u+f2dc}@font-face{font-family:"FontAwesome";font-display:block;src:url(https://ka-f.fontawesome.com/releases/v6.4.0/webfonts/free-fa-v4compatibility.woff2) format("woff2"),url(https://ka-f.fontawesome.com/releases/v6.4.0/webfonts/free-fa-v4compatibility.ttf) format("truetype");unicode-range:u+f041,u+f047,u+f065-f066,u+f07d-f07e,u+f080,u+f08b,u+f08e,u+f090,u+f09a,u+f0ac,u+f0ae,u+f0b2,u+f0d0,u+f0d6,u+f0e4,u+f0ec,u+f10a-f10b,u+f123,u+f13e,u+f148-f149,u+f14c,u+f156,u+f15e,u+f160-f161,u+f163,u+f175-f178,u+f195,u+f1f8,u+f219,u+f27a}
+
+        </style>
+        <style media="all" id ="fa-main">
+            /*!
+             * Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com
+             * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
+             * Copyright 2023 Fonticons, Inc.
+             */.fa{font-family:var(--fa-style-family,"Font Awesome 6 Free");font-weight:var(--fa-style,900)}.fa,.fa-brands,.fa-classic,.fa-regular,.fa-sharp,.fa-solid,.fab,.far,.fas{-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;display:var(--fa-display,inline-block);font-style:normal;font-variant:normal;line-height:1;text-rendering:auto}.fa-classic,.fa-regular,.fa-solid,.far,.fas{font-family:"Font Awesome 6 Free"}.fa-brands,.fab{font-family:"Font Awesome 6 Brands"}.fa-1x{font-size:1em}.fa-2x{font-size:2em}.fa-3x{font-size:3em}.fa-4x{font-size:4em}.fa-5x{font-size:5em}.fa-6x{font-size:6em}.fa-7x{font-size:7em}.fa-8x{font-size:8em}.fa-9x{font-size:9em}.fa-10x{font-size:10em}.fa-2xs{font-size:.625em;line-height:.1em;vertical-align:.225em}.fa-xs{font-size:.75em;line-height:.08333em;vertical-align:.125em}.fa-sm{font-size:.875em;line-height:.07143em;vertical-align:.05357em}.fa-lg{font-size:1.25em;line-height:.05em;vertical-align:-.075em}.fa-xl{font-size:1.5em;line-height:.04167em;vertical-align:-.125em}.fa-2xl{font-size:2em;line-height:.03125em;vertical-align:-.1875em}.fa-fw{text-align:center;width:1.25em}.fa-ul{list-style-type:none;margin-left:var(--fa-li-margin,2.5em);padding-left:0}.fa-ul>li{position:relative}.fa-li{left:calc(var(--fa-li-width, 2em)*-1);position:absolute;text-align:center;width:var(--fa-li-width,2em);line-height:inherit}.fa-border{border-radius:var(--fa-border-radius,.1em);border:var(--fa-border-width,.08em) var(--fa-border-style,solid) var(--fa-border-color,#eee);padding:var(--fa-border-padding,.2em .25em .15em)}.fa-pull-left{float:left;margin-right:var(--fa-pull-margin,.3em)}.fa-pull-right{float:right;margin-left:var(--fa-pull-margin,.3em)}.fa-beat{-webkit-animation-name:fa-beat;animation-name:fa-beat;-webkit-animation-delay:var(--fa-animation-delay,0s);animation-delay:var(--fa-animation-delay,0s);-webkit-animation-direction:var(--fa-animation-direction,normal);animation-direction:var(--fa-animation-direction,normal);-webkit-animation-duration:var(--fa-animation-duration,1s);animation-duration:var(--fa-animation-duration,1s);-webkit-animation-iteration-count:var(--fa-animation-iteration-count,infinite);animation-iteration-count:var(--fa-animation-iteration-count,infinite);-webkit-animation-timing-function:var(--fa-animation-timing,ease-in-out);animation-timing-function:var(--fa-animation-timing,ease-in-out)}.fa-bounce{-webkit-animation-name:fa-bounce;animation-name:fa-bounce;-webkit-animation-delay:var(--fa-animation-delay,0s);animation-delay:var(--fa-animation-delay,0s);-webkit-animation-direction:var(--fa-animation-direction,normal);animation-direction:var(--fa-animation-direction,normal);-webkit-animation-duration:var(--fa-animation-duration,1s);animation-duration:var(--fa-animation-duration,1s);-webkit-animation-iteration-count:var(--fa-animation-iteration-count,infinite);animation-iteration-count:var(--fa-animation-iteration-count,infinite);-webkit-animation-timing-function:var(--fa-animation-timing,cubic-bezier(.28,.84,.42,1));animation-timing-function:var(--fa-animation-timing,cubic-bezier(.28,.84,.42,1))}.fa-fade{-webkit-animation-name:fa-fade;animation-name:fa-fade;-webkit-animation-iteration-count:var(--fa-animation-iteration-count,infinite);animation-iteration-count:var(--fa-animation-iteration-count,infinite);-webkit-animation-timing-function:var(--fa-animation-timing,cubic-bezier(.4,0,.6,1));animation-timing-function:var(--fa-animation-timing,cubic-bezier(.4,0,.6,1))}.fa-beat-fade,.fa-fade{-webkit-animation-delay:var(--fa-animation-delay,0s);animation-delay:var(--fa-animation-delay,0s);-webkit-animation-direction:var(--fa-animation-direction,normal);animation-direction:var(--fa-animation-direction,normal);-webkit-animation-duration:var(--fa-animation-duration,1s);animation-duration:var(--fa-animation-duration,1s)}.fa-beat-fade{-webkit-animation-name:fa-beat-fade;animation-name:fa-beat-fade;-webkit-animation-iteration-count:var(--fa-animation-iteration-count,infinite);animation-iteration-count:var(--fa-animation-iteration-count,infinite);-webkit-animation-timing-function:var(--fa-animation-timing,cubic-bezier(.4,0,.6,1));animation-timing-function:var(--fa-animation-timing,cubic-bezier(.4,0,.6,1))}.fa-flip{-webkit-animation-name:fa-flip;animation-name:fa-flip;-webkit-animation-delay:var(--fa-animation-delay,0s);animation-delay:var(--fa-animation-delay,0s);-webkit-animation-direction:var(--fa-animation-direction,normal);animation-direction:var(--fa-animation-direction,normal);-webkit-animation-duration:var(--fa-animation-duration,1s);animation-duration:var(--fa-animation-duration,1s);-webkit-animation-iteration-count:var(--fa-animation-iteration-count,infinite);animation-iteration-count:var(--fa-animation-iteration-count,infinite);-webkit-animation-timing-function:var(--fa-animation-timing,ease-in-out);animation-timing-function:var(--fa-animation-timing,ease-in-out)}.fa-shake{-webkit-animation-name:fa-shake;animation-name:fa-shake;-webkit-animation-duration:var(--fa-animation-duration,1s);animation-duration:var(--fa-animation-duration,1s);-webkit-animation-iteration-count:var(--fa-animation-iteration-count,infinite);animation-iteration-count:var(--fa-animation-iteration-count,infinite);-webkit-animation-timing-function:var(--fa-animation-timing,linear);animation-timing-function:var(--fa-animation-timing,linear)}.fa-shake,.fa-spin{-webkit-animation-delay:var(--fa-animation-delay,0s);animation-delay:var(--fa-animation-delay,0s);-webkit-animation-direction:var(--fa-animation-direction,normal);animation-direction:var(--fa-animation-direction,normal)}.fa-spin{-webkit-animation-name:fa-spin;animation-name:fa-spin;-webkit-animation-duration:var(--fa-animation-duration,2s);animation-duration:var(--fa-animation-duration,2s);-webkit-animation-iteration-count:var(--fa-animation-iteration-count,infinit)
+        </style>
+        <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;400&amp;family=Crimson+Text:ital@1&amp;family=EB+Garamond:wght@500&amp;family=Metal+Mania&amp;family=Shalimar&amp;family=Source+Serif+Pro:ital,wght@0,300;0,400;0,700;1,300&amp;display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="portifolio.css">
+        <style type="text/css">
+            *{
+        margin: 0;
+        padding: 0;
+        font-family: 'Comic Neue', cursive;
+        font-weight: bold;
+    }
+    .navicon{
+        display: none;
+    }
+    section{
+        min-height: 80vh;
+        padding: 50px;
+    }
+    body{
+        background-color: #bfe3e8c8;
+        /* background-color: black; */
+    }
+    header{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        background-color: rgba(255, 255, 255, 0.621);
+        /* background-color: rgba(0, 0, 0, 0.546); */
+       justify-content: center;
+       /* height: 40px; */
+        padding: 10px;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        box-shadow: 0 0 30px  grey;
+        border-radius: 10px;
+    }
+    .navi {
+        display: flex;
+        justify-content: space-between;
+        gap: 50px;
+        text-decoration: none;
+    }
+    .first{
+         display: flex;
+         margin-left: 20px;
+         margin-right: 20px;
+         
+         
+    }
+    .profileimg img{
+        margin-top: 100px;
+        width: 400px;
+        height: 500px;
+        border: 5px solid white;
+        /* #266150 */
+        border-radius: 10px;
+        /* box-shadow: 0 0 45px grey; */
+    }
+    .profile{
+        margin-top: 120px;
+        text-align: center;
+        line-height: 40px;
+        
+    }
+    .profile h1{
+        font-size:80px;
+     
+        font-weight: bolder;
+        line-height: 100px;
+        border-radius: 23px;
+        color: linear-gradient(145deg, #296856, #225748);
+
+    }
+    .profile p{
+        font-size: 15px;
+        margin-top: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    a{
+        text-decoration: none;
+        padding: 10px;
+        border-radius: 8px;
+        color: #266150
+    }
+    .nav a:hover{
+        background-color: #266150;
+        color: white;
+    }
+    i{
+        margin-right: 10px;
+        font-size: 20px;
+    }
+    .second{
+        background-color: #f9faf5;
+    }
+    progress{
+        width: 100%;
+        height: 40px;
+        background-color: #266150;
+        border-radius: 40px;
+        margin-top: 40px;
+    }
+      /* For Chrome or Safari */
+      progress::-webkit-progress-bar {
+            background-color: #eeeeee76;
+            border-radius: 10px;
+        }
+  
+        progress::-webkit-progress-value {
+            background-color: #266150 !important;
+            border-radius: 40px;
+        }
+        /* .contact{
+            margin: 50px;
+        } */
+        .skill p{
+            font-size: 20px;
+        }
+        .second h1{
+            text-align: center;
+            font-weight: bold;
+        }
+        .skill div{
+            margin-bottom: 20px;
+        }
+        .education h1{
+            text-align: center;
+
+        }
+        .colleges{
+            margin: 40px;
+            line-height: 40px;
+        }
+        .colleges div{
+            padding: 20px;
+        }
+        .colleges h2{
+            color: #266150;
+            font-weight: bold;
+        }
+        .colleges p{
+            color: black;
+        }
+        .certificates{
+            background-color: #f9faf5;
+        }
+        .certificates h1{
+            text-align: center;
+        }
+        .certi{
+            margin: 40px;
+            line-height: 40px;
+        }
+        .certi div{
+            padding: 20px;
+        }
+        .projects h1{ text-align: center;}
+        .pro{
+            margin: 40px;
+            line-height: 40px;
+        }
+        .pro div{
+            padding: 20px;
+        }
+        .contactus{
+            background-color: #f9faf5;
+        }
+        .contactus h1{
+            text-align: center;
+
+        }
+        .cont{
+            margin: 40px;
+            line-height: 40px;
+        }
+        .cont div{
+            padding: 20px;
+        }
+        @media screen and (max-width: 600px) {
+            .section{
+                padding: 0px;
+                margin: 0px;
+            }
+            .profileimg img{
+                width: 100%;
+                height: 400px;
+            }
+            .first{
+                margin-left: 0px;
+                padding: 20px;
+            }
+            .profile p{
+                margin-left: 0px;
+                margin-right: 0px;
+            }
+            .second{
+                padding: 20px;
+            }
+            .second h1{
+                margin-bottom: 20px;
+            }
+            .cont{
+                margin: 0px;
+            }
+            .colleges{
+                margin: 0px;
+            }
+            .education{
+                padding: 10px;
+            }
+            .certificates{
+                padding:10px ;
+            }
+            .certi{
+                margin: 0px;
+            }
+            .projects{
+                padding: 10px;
+            }
+            .pro{
+                margin: 0px;
+            }
+            .contactus{
+                padding: 10px;
+            }
+            .profile{
+                margin-top: 10px;
+            }
+            .first{
+                display: flex;
+                
+                flex-wrap: wrap;
+                
+           }
+           .navi{
+            display: none;
+           }
+           .navicon{
+            display: block;
+            
+            left: 10px;
+            margin-left: 10px;
+            margin-right: 250px;
+            
+           }
+           .profileimg img{
+            margin-top: 50px;
+           }
+            /* h1{
+                margin-bottom: 40px;
+            } */
+    }
+    
+    @media screen and (max-width: 600px){
+    .navi a {display: none;}
+    
+    .navi{
+        display: flex;
+        flex-direction: column; 
+        width: 100%; 
+        background-color: white; 
+    }
+     
+    }
+
+    @media screen and (max-width: 600px) {
+    .navi.responsive {position: relative;}
+    
+    .navi.responsive  {
+        float: none;
+        
+        top: 20px;
+        padding: 20px;
+        
+    }
+    .navi.responsive a{
+        display: block;
+        padding: 0px;
+    }
+    .education img{
+        width: 300px;
+        height: 300px;
+    }
+    .certify img {
+    height: 300px;
+    width: 300px;
+}
+.project{
+    display: flex;
+    flex-wrap: wrap-reverse;
+}
+.project img{
+    width: 300px;
+    height: 300px;
+}
+    
+    
+    }
+    .footer img{
+        height: 50px;
+        width: 50px;
+        
+    }
+    .edu {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap:wrap-reverse;
+    }
+    .education img{
+        max-height: 600px;
+        max-width: 600px;
+    }
+    .certify{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap:wrap-reverse;
+    }
+    .certify img{
+        max-height: 600px;
+        max-width: 600px;
+    }
+    .project{
+        display: flex;
+        justify-content: space-between;
+        /* flex-wrap:wrap-reverse; */
+    }
+    .project img{
+        max-height: 600px;
+        max-width: 600px;
+    }
+    
+    footer{
+        background-color: #f9faf5;
+        padding: 20px;
+        box-shadow: 0 0 45px grey;
+    }
+    .foot-nav{
+        display: flex;
+        flex-direction: column;
+    }
+    section h1{
+        color: #225748;
+        font-weight: bold;
+        font-size: 35px;
+    }
+    .certificates h2{
+        color: #296856;
+    }
+    .projects h2{
+        color:#296856;
+    }
+
+
+       </style>
+    </head>
+    <body>
+        <header>
+            <a href="javascript:void(0);" class="navicon" onclick="myFunction()">
+                <i class="fa fa-bars" aria-hidden="true"></i></a>
+                <div class="navi responsive" id="topnavi">
+            
+                    <a href="#home" onclick="myFunction()"><i class="fa-solid fa-house-user"></i>Home</a>
+                    <a href="#contact" onclick="myFunction()"><i class="fa-solid fa-address-book"></i>Contact</a>
+                   <a href="#education" onclick="myFunction()"><i class="fa-solid fa-user-graduate"></i>Educations</a>
+                   <a href="#internship" onclick="myFunction()"><i class="fa-solid fa-laptop-code"></i>Internship</a>
+                   <a href="#certificate" onclick="myFunction()"><i class="fa-solid fa-laptop-code"></i>Certifications</a>
+                    <a href="#skill" onclick="myFunction()"><i class="fa-solid fa-trophy"></i>Skills</a>
+                </div>    
+        </header>
+        <section class="first" id="home">
+            <div class="profileimg">
+    <!--             <img src="mashruqman.jpg" alt=""> -->
+                <img src="mashruqman.jpg" alt="">
+            </div>
+            <div class="profile">
+                <h1>I'm Syed Mashruq</h1>
+                <p class="designation">Web Designer &amp; Programmer</p>
+                <p>I am pursuing a Bachelor of Technology in Computer Science and Engineering Stream at Tirumala Engineering College located at Narasaraopet, Palanadu Dist, Andhra Pradesh.
+                    I am a passionate student about learning new technologies and am very much interested in developing various software applications. I am an innovative person who solves problems from a different thinking perspective. My interest in technologies is very keen and I am working on Web Applications using React JS, Django and Ml Classifications
+                </p>
+            </div>
+        </section>
+        <section class="second" id="skill">
+            <h1>My Skills</h1>
+            <div class="skill">
+                
+                <div>
+                <p>Web Development</p>
+                <progress value="32" max="40"> 32% </progress>
+                </div>
+                <div>
+                <p>Python</p>
+                <progress value="32" max="35"> 32% </progress>
+                </div>
+                <div>
+                <p>Java Programming</p>
+                <progress value="32" max="35"> 32% </progress>
+                </div>
+                <div>
+                <p>Machine Learning</p>
+                <progress value="32" max="50"> 32% </progress>
+                </div>
+                <div>
+                    <center ><h1>Interpersonal Skills</h1></center>
+                    <div><h2><li>Punctual At Work</li></h2></div>
+                    <div><h2><li>Good Listener</li></h2></div>
+                    <div><h2><li>Quick Learner</li></h2></div>
+                    <div><h2><li>Communication Skills </li></h2></div>
+                </div>
+            </div>
+            
+        </section>
+        <section class="education" id="education">
+            <h1>Education</h1>
+            <div class="edu">
+            <div class="colleges">
+                <div>
+                <h2><i class="fa-solid fa-building-columns"></i>TIRUMALA ENGINEERING COLLEGE</h2>
+                <p>Bachelor of Technology-Computer Science and Engineering</p>
+                <p>CGPA:7.0(TILL DATE)</p>
+                </div>
+                <div>
+                <h2><i class="fa-solid fa-building-columns"></i>SRI CHAITANYA JUNIOR COLLEGE</h2>
+                <p>Intermediate</p>
+                <p>CGPA:9.83</p>
+                </div>
+                <div>
+                <h2><i class="fa-solid fa-building-columns"></i>SRI CHAITANYA TECHNO SCHOOL</h2>
+                <p>10TH</p>
+                <p>CGPA:9.7</p>
+                </div>
+            </div>
+            <div>
+                <img src="edu1.png" alt="">
+            </div>
+            </div>
+        </section>
+        <section class="certificates" id="certificate">
+            <h1>Certificates</h1>
+            <div class="certify">
+            <div class="certi">
+            <div>
+                <h2>GOOGLE DIGITAL UNLOCKED</h2>
+                <li>THE FUNDAMENTALS OF DIGITAL MARKETING.</li>
+            </div>
+            <div>
+                <h2>INFOSYS Springboard</h2>
+                <li>Internet of things 101. </li>
+                    <li>Basics of python.</li>
+                    <li>Time management.</li>
+            </div>
+            <div>
+                <h2>CELONIS</h2>
+                <li>Process Automation Bootcamp </li>
+            </div>
+            </div>
+            <div>
+                <img src="edu2.png" alt="">
+            </div>
+            </div>
+        </section>
+        <section class="internship" id="internship">
+            <div class="project">
+            <div class="pro">
+                 
+                 
+                <h1>
+                    Internship
+                </h1>
+                <div>
+                    <h2>
+                        AWS Academy Graduate
+                    </h2>
+                    <p>The motto of this intern is to make me fimilar with  Cloud Computing concepts and profects.</p>
+                    <p>Amazon Web Services.</p>
+                </div>
+                <div>
+                    <h2>
+                        Web Development and Designing
+                    </h2>
+                    <p>The motto of this intern is to improve my skill set in the field of Web Development.</p>
+                    <p>Open Skill Build.</p>
+                </div>
+            </div>
+            <div>
+                <img src="edu3.png" alt="">
+            </div>
+            </div>
+        </section>
+        <footer id="contact">
+            <h3>Contact Me</h3>
+            <div class="foot-nav">
+                    <a href="mailto:mashruqsyedmsd@gmail.com"><i class="fa-solid fa-envelope"></i>mashruqsyedmsd@gmail.com</a>
+                    <a href="https://wa.me/8688289848"><i class="fa-brands fa-whatsapp"></i>8688289848</a>
+                    <a href="https://www.linkedin.com/in/syed-mashruq-095a42248/" target="_blank"><i class="fa-brands fa-linkedin"></i>https://www.linkedin.com/in/syed-mashruq-095a42248</a>
+                </div>
+    
+        </footer>
+        <script>
+            function myFunction() {
+              var x = document.getElementById("topnavi");
+              if (x.className === "navi") {
+                x.className += " responsive";
+              } else {
+                x.className = "navi";
+              }
+            }
+            
+            </script>
+
+
+    </body>
+
+</html>      
+
